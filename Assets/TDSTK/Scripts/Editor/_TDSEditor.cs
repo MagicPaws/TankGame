@@ -13,15 +13,18 @@ namespace TDSTK {
 	public class TDSEditor {
 		
 		
-		public static bool IsPrefabOrPrefabInstance(GameObject obj){
-			PrefabType type=PrefabUtility.GetPrefabType(obj);
-			return type==PrefabType.Prefab || type==PrefabType.PrefabInstance;
+		public static bool IsPrefabOrPrefabInstance(GameObject obj)
+		{
+			PrefabAssetType prefabAssetType = PrefabUtility.GetPrefabAssetType(obj);
+			return prefabAssetType == PrefabAssetType.Regular || prefabAssetType == PrefabAssetType.Model;
 		}
-		public static bool IsPrefabInstance(GameObject obj){
-			return obj==null ? false : PrefabUtility.GetPrefabType(obj)==PrefabType.PrefabInstance;
+		public static bool IsPrefabInstance(GameObject obj)
+		{
+			return obj == null ? false : PrefabUtility.GetPrefabInstanceStatus(obj) == PrefabInstanceStatus.Connected;
 		}
-		public static bool IsPrefab(GameObject obj){
-			return obj==null ? false : PrefabUtility.GetPrefabType(obj)==PrefabType.Prefab;
+		public static bool IsPrefab(GameObject obj)
+		{
+			return obj == null ? false : PrefabUtility.GetPrefabInstanceStatus(obj) == PrefabInstanceStatus.NotAPrefab;
 		}
 		
 		
