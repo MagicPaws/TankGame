@@ -1,0 +1,192 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3be6b37b3703b58428641d8858c53302, type: 3}
+  m_Name: EffectDB
+  m_EditorClassIdentifier: 
+  effectList:
+  - ID: 0
+    name: Slow
+    icon: {fileID: 21300000, guid: 2f62ee22ffdbfd54982290967f7dc0af, type: 3}
+    desp: 
+    showOnUI: 0
+    hitChance: 1
+    duration: 4
+    restoreHitPoint: 0
+    restoreEnergy: 0
+    speedMul: 0.5
+    stun: 0
+    invincible: 0
+    damageMul: 1
+    critChanceMul: 1
+    critMultiplierMul: 1
+    expired: 0
+  - ID: 1
+    name: Stun
+    icon: {fileID: 21300000, guid: 66dbdb397006d4e4e837f1dce393f525, type: 3}
+    desp: 
+    showOnUI: 0
+    hitChance: 1
+    duration: 4
+    restoreHitPoint: 0
+    restoreEnergy: 0
+    speedMul: 1
+    stun: 1
+    invincible: 0
+    damageMul: 1
+    critChanceMul: 1
+    critMultiplierMul: 1
+    expired: 0
+  - ID: 10
+    name: Stun_Short
+    icon: {fileID: 21300000, guid: 66dbdb397006d4e4e837f1dce393f525, type: 3}
+    desp: 
+    showOnUI: 0
+    hitChance: 1
+    duration: 1
+    restoreHitPoint: 0
+    restoreEnergy: 0
+    speedMul: 1
+    stun: 1
+    invincible: 0
+    damageMul: 1
+    critChanceMul: 1
+    critMultiplierMul: 1
+    expired: 0
+  - ID: 2
+    name: Damage Boost
+    icon: {fileID: 21300000, guid: 2f3ba5f781743c34c8816fad48124081, type: 3}
+    desp: 
+    showOnUI: 1
+    hitChance: 1
+    duration: 6
+    restoreHitPoint: 0
+    restoreEnergy: 0
+    speedMul: 1
+    stun: 0
+    invincible: 0
+    damageMul: 2
+    critChanceMul: 1
+    critMultiplierMul: 1
+    expired: 0
+  - ID: 3
+    name: Critical Boost
+    icon: {fileID: 21300000, guid: 885d97b800d32014fae9137cfe61c8b3, type: 3}
+    desp: 
+    showOnUI: 1
+    hitChance: 1
+    duration: 6
+    restoreHitPoint: 0
+    restoreEnergy: 0
+    speedMul: 1
+    stun: 0
+    invincible: 0
+    damageMul: 1
+    critChanceMul: 5
+    critMultiplierMul: 2
+    expired: 0
+  - ID: 4
+    name: Restore HitPoint
+    icon: {fileID: 21300000, guid: 30d450cf9c95b20439cb0c2cb68ac550, type: 3}
+    desp: 
+    showOnUI: 1
+    hitChance: 1
+    duration: 5
+    restoreHitPoint: 6
+    restoreEnergy: 0
+    speedMul: 1
+    stun: 0
+    invincible: 0
+    damageMul: 1
+    critChanceMul: 1
+    critMultiplierMul: 1
+    expired: 0
+  - ID: 5
+    name: Restore Energy
+    icon: {fileID: 21300000, guid: 214c8005ed05ec64988523ebde392b3a, type: 3}
+    desp: 
+    showOnUI: 1
+    hitChance: 1
+    duration: 5
+    restoreHitPoint: 0
+    restoreEnergy: 6
+    speedMul: 1
+    stun: 0
+    invincible: 0
+    damageMul: 1
+    critChanceMul: 1
+    critMultiplierMul: 1
+    expired: 0
+  - ID: 6
+    name: Blood Lust
+    icon: {fileID: 21300000, guid: 85239e80611008948ad8a3a7e0636015, type: 3}
+    desp: 
+    showOnUI: 1
+    hitChance: 1
+    duration: 5
+    restoreHitPoint: -2
+    restoreEnergy: 0
+    speedMul: 1
+    stun: 0
+    invincible: 0
+    damageMul: 2
+    critChanceMul: 2
+    critMultiplierMul: 1
+    expired: 0
+  - ID: 7
+    name: Speed Boost
+    icon: {fileID: 21300000, guid: f84dafb7a8ef6fb4e977200d5dd4c392, type: 3}
+    desp: 
+    showOnUI: 1
+    hitChance: 1
+    duration: 5
+    restoreHitPoint: 0
+    restoreEnergy: 0
+    speedMul: 1.5
+    stun: 0
+    invincible: 0
+    damageMul: 1
+    critChanceMul: 1
+    critMultiplierMul: 1
+    expired: 0
+  - ID: 8
+    name: Damage Over Time
+    icon: {fileID: 21300000, guid: 2f40412feb2cd4b419f92d26b1e8dd59, type: 3}
+    desp: 
+    showOnUI: 1
+    hitChance: 1
+    duration: 3
+    restoreHitPoint: -2
+    restoreEnergy: 0
+    speedMul: 1
+    stun: 0
+    invincible: 0
+    damageMul: 1
+    critChanceMul: 1
+    critMultiplierMul: 1
+    expired: 0
+  - ID: 9
+    name: Invincible
+    icon: {fileID: 21300000, guid: 36d4334467d3aed4abc8621a0357f71f, type: 3}
+    desp: 
+    showOnUI: 1
+    hitChance: 1
+    duration: 6
+    restoreHitPoint: 0
+    restoreEnergy: 0
+    speedMul: 1
+    stun: 0
+    invincible: 1
+    damageMul: 1
+    critChanceMul: 1
+    critMultiplierMul: 1
+    expired: 0
+  copiedFromOldDB: 0

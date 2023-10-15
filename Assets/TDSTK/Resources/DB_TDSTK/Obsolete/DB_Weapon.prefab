@@ -1,0 +1,57 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1 &121250
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 447118}
+  - component: {fileID: 11429382}
+  m_Layer: 0
+  m_Name: DB_Weapon
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &447118
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 121250}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &11429382
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 121250}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0afff672090a90a4cb10032fecb7d806, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  weaponList:
+  - {fileID: 11456444, guid: fd09f1a85fedd2d4aa40fff4d2e91afd, type: 3}
+  - {fileID: 11456444, guid: 883b1bc2376ec564284fb80d377fc7ea, type: 3}
+  - {fileID: 11456444, guid: a85dbdccbeb36534dbb3994655a793ae, type: 3}
+  - {fileID: 11456444, guid: 65fb4da8a72f83d4ca978cbce2f8fe62, type: 3}
+  - {fileID: 11459320, guid: ea78b65e7d62f284e80f8d825d4acd38, type: 3}
+  - {fileID: 11456444, guid: 41c22df3e93bf144bb8937bab3502ba6, type: 3}
+  - {fileID: 11456444, guid: 65fc4684c1d58fb43b140b08624d5fea, type: 3}
+  - {fileID: 11488150, guid: 751f6e7e3655f2548bc041206c06409e, type: 3}
+  - {fileID: 11452564, guid: fad6be2d7aaf0a241a0406e724415e08, type: 3}
+  - {fileID: 11488150, guid: 413cf7e5e0d08f649817fb4113fe6c2c, type: 3}
+  - {fileID: 11456444, guid: 7c8a5e155e375ae4c92f7031fb0cff69, type: 3}

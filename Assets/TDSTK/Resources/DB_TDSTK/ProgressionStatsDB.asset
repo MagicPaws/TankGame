@@ -1,0 +1,34 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: da1a41d35d51bb543b2ba3a8ec07f992, type: 3}
+  m_Name: ProgressionStatsDB
+  m_EditorClassIdentifier: 
+  stats:
+    levelCap: 20
+    hitPointGain: 5
+    hitPointRegenGain: 0
+    energyGain: 1
+    energyRegenGain: 0.25
+    speedMulGain: 0
+    dmgMulGain: 0.1
+    critChanceMulGain: 0
+    critMultiplierMulGain: 0
+    perkCurrencyGain: 1
+    sumRecursively: 1
+    expTHM: 1.5
+    expTHC: 10
+    sumRecursively_Cached: 1
+    expTHM_Cached: 0
+    expTHC_Cached: 0
+    expThresholdList: 00000000090000001500000024000000360000004b000000630000007e0000009c000000bd000000e100000008010000320100005f0100008f010000c2010000f8010000310200006d020000ac020000
+    perkUnlockingAtLevelList: []
+  copiedFromOldDB: 0
