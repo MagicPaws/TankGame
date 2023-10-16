@@ -1,0 +1,557 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1 &122616
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 461738}
+  - component: {fileID: 3377946}
+  - component: {fileID: 2346522}
+  m_Layer: 0
+  m_Name: TankTurret_1
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &461738
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 122616}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children:
+  - {fileID: 474164}
+  m_Father: {fileID: 469078}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!33 &3377946
+MeshFilter:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 122616}
+  m_Mesh: {fileID: 4300028, guid: 2daec5a52629f1943aa8397381c83864, type: 3}
+--- !u!23 &2346522
+MeshRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 122616}
+  m_Enabled: 1
+  m_CastShadows: 1
+  m_ReceiveShadows: 1
+  m_DynamicOccludee: 1
+  m_MotionVectors: 1
+  m_LightProbeUsage: 1
+  m_ReflectionProbeUsage: 1
+  m_RenderingLayerMask: 1
+  m_RendererPriority: 0
+  m_Materials:
+  - {fileID: 2100000, guid: 4fcc79a72b194b146aedbaf34152b536, type: 2}
+  m_StaticBatchInfo:
+    firstSubMesh: 0
+    subMeshCount: 0
+  m_StaticBatchRoot: {fileID: 0}
+  m_ProbeAnchor: {fileID: 0}
+  m_LightProbeVolumeOverride: {fileID: 0}
+  m_ScaleInLightmap: 1
+  m_PreserveUVs: 0
+  m_IgnoreNormalsForChartDetection: 0
+  m_ImportantGI: 0
+  m_StitchLightmapSeams: 0
+  m_SelectedEditorRenderState: 3
+  m_MinimumChartSize: 4
+  m_AutoUVMaxDistance: 0.5
+  m_AutoUVMaxAngle: 89
+  m_LightmapParameters: {fileID: 0}
+  m_SortingLayerID: 0
+  m_SortingLayer: 0
+  m_SortingOrder: 0
+--- !u!1 &146360
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 469078}
+  m_Layer: 0
+  m_Name: TurretObject
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &469078
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 146360}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children:
+  - {fileID: 461738}
+  m_Father: {fileID: 404086}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &182902
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 474164}
+  m_Layer: 0
+  m_Name: WeaponMount
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &474164
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 182902}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 1.0999997, z: 0.5}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 461738}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &190946
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 469606}
+  - component: {fileID: 3355036}
+  - component: {fileID: 2312250}
+  m_Layer: 0
+  m_Name: TankBody_1
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &469606
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 190946}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 404086}
+  m_RootOrder: 1
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!33 &3355036
+MeshFilter:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 190946}
+  m_Mesh: {fileID: 4300080, guid: 2daec5a52629f1943aa8397381c83864, type: 3}
+--- !u!23 &2312250
+MeshRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 190946}
+  m_Enabled: 1
+  m_CastShadows: 1
+  m_ReceiveShadows: 1
+  m_DynamicOccludee: 1
+  m_MotionVectors: 1
+  m_LightProbeUsage: 1
+  m_ReflectionProbeUsage: 1
+  m_RenderingLayerMask: 1
+  m_RendererPriority: 0
+  m_Materials:
+  - {fileID: 2100000, guid: 4fcc79a72b194b146aedbaf34152b536, type: 2}
+  m_StaticBatchInfo:
+    firstSubMesh: 0
+    subMeshCount: 0
+  m_StaticBatchRoot: {fileID: 0}
+  m_ProbeAnchor: {fileID: 0}
+  m_LightProbeVolumeOverride: {fileID: 0}
+  m_ScaleInLightmap: 1
+  m_PreserveUVs: 0
+  m_IgnoreNormalsForChartDetection: 0
+  m_ImportantGI: 0
+  m_StitchLightmapSeams: 0
+  m_SelectedEditorRenderState: 3
+  m_MinimumChartSize: 4
+  m_AutoUVMaxDistance: 0.5
+  m_AutoUVMaxAngle: 89
+  m_LightmapParameters: {fileID: 0}
+  m_SortingLayerID: 0
+  m_SortingLayer: 0
+  m_SortingOrder: 0
+--- !u!1 &192742
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 404086}
+  - component: {fileID: 11446944}
+  - component: {fileID: 5405974}
+  - component: {fileID: 13670870}
+  - component: {fileID: 11477936}
+  - component: {fileID: 11408238}
+  m_Layer: 8
+  m_Name: Player_ShootingRange
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &404086
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 192742}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: -10}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children:
+  - {fileID: 469078}
+  - {fileID: 469606}
+  m_Father: {fileID: 0}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &11446944
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 192742}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 34449849e4b77bb44afad697d7676786, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  thisT: {fileID: 0}
+  thisObj: {fileID: 0}
+  prefabID: 0
+  instanceID: 0
+  icon: {fileID: 0}
+  unitName: PlayerUnit_ShootingRange
+  desp: 
+  level: 1
+  hitPointFull: 50
+  hitPoint: 0
+  startHitPointAtFull: 1
+  hpRegenRate: 0
+  hpRegenStagger: 5
+  energyFull: 10
+  energy: 0
+  energyRate: 5
+  startEnergyAtFull: 1
+  armorType: 0
+  anchorDown: 0
+  moveSpeed: 7.5
+  brakeRange: 2
+  rotateSpeed: 10
+  target: {fileID: 0}
+  enableRangeAttack: 0
+  shootObject: {fileID: 150996, guid: fd5c6fe2dc097e64396b02908f6b32b8, type: 3}
+  shootPointList:
+  - {fileID: 0}
+  shootPointDelay: 0
+  turretObj: {fileID: 469078}
+  smoothTurretRotation: 1
+  turretTrackingSpeed: 10
+  range: 30
+  cooldown: 0.1
+  attackStats:
+    damageType: 0
+    damageMin: 1
+    damageMax: 4
+    aoeRadius: 0
+    diminishingAOE: 1
+    critChance: 0.15
+    critMultiplier: 2
+    impactForce: 2
+    explosionRadius: 2.5
+    explosionForce: 5
+    effectID: -1
+    effectIdx: -1
+  enableContactAttack: 0
+  contactCooldown: 1
+  contactCurrentCD: 0
+  contactAttackStats:
+    damageType: 0
+    damageMin: 1
+    damageMax: 4
+    aoeRadius: 0
+    diminishingAOE: 1
+    critChance: 0.15
+    critMultiplier: 2
+    impactForce: 2
+    explosionRadius: 2.5
+    explosionForce: 5
+    effectID: -1
+    effectIdx: -1
+  valueCredits: 0
+  valueScore: 0
+  valueHitPoint: 0
+  valueEnergy: 0
+  valueExp: 0
+  valuePerkC: 0
+  destroyCamShake: 1
+  destroyedEffectObj: {fileID: 161024, guid: a1a6169fcb0543040a41c85eadcc2f3d, type: 3}
+  autoDestroyDObj: 1
+  dObjActiveDuration: 2
+  useDropManager: 1
+  dropObject: {fileID: 0}
+  dropChance: 0.5
+  spawnUponDestroy: {fileID: 0}
+  spawnUponDestroyCount: 2
+  spawnImmunity: 2
+  uAnimation: {fileID: 0}
+  waveID: -1
+  spawner: {fileID: 0}
+  activeEffect:
+    ID: -1
+    name: 
+    icon: {fileID: 0}
+    desp: 
+    showOnUI: 1
+    hitChance: 1
+    duration: 2.5
+    restoreHitPoint: 0
+    restoreEnergy: 0
+    speedMul: 1
+    stun: 0
+    invincible: 0
+    damageMul: 1
+    critChanceMul: 1
+    critMultiplierMul: 1
+    expired: 0
+  weaponMountPoint: {fileID: 474164}
+  enableAllWeapons: 0
+  weaponList:
+  - {fileID: 11456444, guid: fd09f1a85fedd2d4aa40fff4d2e91afd, type: 3}
+  weaponID: 0
+  weaponInitiated: 0
+  enableAbility: 1
+  enableAllAbilities: 0
+  abilityIDList: 0000000001000000
+  enableTurretRotate: 1
+  turretAimMode: 0
+  aimAtTravelDirection: 1
+  enableAutoAim: 0
+  faceTravelDirection: 1
+  enabledMovementX: 1
+  enabledMovementZ: 1
+  movementMode: 1
+  acceleration: 5
+  decceleration: 5
+  boostEnergyRate: 0.2
+  boostMultiplier: 2
+  activeBrakingRate: 5
+  useLimit: 1
+  showGizmo: 1
+  minPosX: -20
+  minPosZ: -20
+  maxPosX: 20
+  maxPosZ: 20
+  levelModifier:
+    ID: -1
+    name: 
+    icon: {fileID: 0}
+    desp: 
+    showOnUI: 1
+    hitChance: 1
+    duration: 2.5
+    restoreHitPoint: 0
+    restoreEnergy: 0
+    speedMul: 1
+    stun: 0
+    invincible: 0
+    damageMul: 1
+    critChanceMul: 1
+    critMultiplierMul: 1
+    expired: 0
+  playerID: 0
+  loadProgress: 0
+  saveProgress: 0
+  saveUponChange: 0
+  progress: {fileID: 11408238}
+  perk: {fileID: 11477936}
+--- !u!54 &5405974
+Rigidbody:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 192742}
+  serializedVersion: 2
+  m_Mass: 10
+  m_Drag: 10
+  m_AngularDrag: 10
+  m_UseGravity: 1
+  m_IsKinematic: 0
+  m_Interpolate: 0
+  m_Constraints: 116
+  m_CollisionDetection: 0
+--- !u!136 &13670870
+CapsuleCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 192742}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  m_Radius: 1.25
+  m_Height: 3
+  m_Direction: 1
+  m_Center: {x: 0, y: 0.75, z: 0}
+--- !u!114 &11477936
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 192742}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 333be4d5ec98615449e876b820751752, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  enablePerk: 1
+  perkCurrency: 0
+  perkPoint: 0
+  unavailableIDList: 
+  purchasedIDList: 
+  perkList: []
+  player: {fileID: 0}
+  init: 0
+  hitPointCap: 0
+  hitPointRegen: 0
+  energyCap: 0
+  energyRegen: 0
+  moveSpeedMul: 0
+  damageMul: 0
+  critMul: 0
+  critMulMul: 0
+  expGainMul: 0
+  creditGainMul: 0
+  scoreGainMul: 0
+  hitPointGainMul: 0
+  energyGainMul: 0
+  weapStatG:
+    prefabID: 0
+    dmg: 0
+    crit: 0
+    critMul: 0
+    aoe: 0
+    range: 0
+    cooldown: 0
+    clipSize: 0
+    ammoCap: 0
+    reloadDuration: 0
+    recoilMagnitude: 0
+  weapStatList: []
+  abilityStatG:
+    prefabID: 0
+    abCost: 0
+    abCooldown: 0
+    abRange: 0
+    abDmg: 0
+    abCrit: 0
+    abCritMul: 0
+    abAOE: 0
+  abilityStatList: []
+--- !u!114 &11408238
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 192742}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f7eda7ea78b7d3847b95199354ba5c79, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  enableLeveling: 1
+  loadProgress: 0
+  saveProgress: 0
+  resetOnStart: 1
+  level: 0
+  exp: 0
+  loadStatsFromDB: 0
+  stats:
+    levelCap: 20
+    hitPointGain: 2
+    hitPointRegenGain: 0
+    energyGain: 0
+    energyRegenGain: 0.1
+    speedMulGain: 0
+    dmgMulGain: 0.1
+    critChanceMulGain: 0
+    critMultiplierMulGain: 0
+    perkCurrencyGain: 0
+    sumRecursively: 1
+    expTHM: 3
+    expTHC: 9
+    sumRecursively_Cached: 1
+    expTHM_Cached: 0
+    expTHC_Cached: 0
+    expThresholdList: 00000000090000001500000024000000360000004b000000630000007e0000009c000000bd000000e100000008010000320100005f0100008f010000c2010000f8010000310200006d020000ac020000
+    perkUnlockingAtLevelList:
+    - level: 3
+      perkIDList: 07000000
+    - level: 6
+      perkIDList: 0e000000
+    - level: 9
+      perkIDList: 0b000000
+    - level: 12
+      perkIDList: 0d000000
+    - level: 15
+      perkIDList: 0c000000
+    - level: 18
+      perkIDList: 05000000
+    - level: 20
+      perkIDList: 0f000000
+  testVariable: 0
+  player: {fileID: 0}
+  init: 0
