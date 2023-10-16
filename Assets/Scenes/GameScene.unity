@@ -12135,7 +12135,7 @@ PrefabInstance:
     - target: {fileID: 1006347887914542578, guid: f951ad402f36d1f41a1f2db8e48d2b81, type: 3}
       propertyPath: content.m_Image
       value: 
-      objectReference: {fileID: 2800000, guid: 94420edb7b572ff4984a8791789b8ff7, type: 3}
+      objectReference: {fileID: 2800000, guid: 554cac172c4bb7f478c4eb63210c95d2, type: 3}
     - target: {fileID: 1006347887914542578, guid: f951ad402f36d1f41a1f2db8e48d2b81, type: 3}
       propertyPath: pos.screen_Alignment_Type
       value: 5
