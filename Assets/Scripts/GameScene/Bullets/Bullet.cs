@@ -40,7 +40,7 @@ public class Bullet : MonoBehaviour
         if (!isAoe)
         {
             // 如果碰撞的是地面或者可破坏物，并且是敌人
-            if (other.tag == "Ground" || other.tag == "DestroyableObj" && grandFather.tag == "Enemy")
+            if (other.tag == "Ground" || other.tag == "DestroyableObj" && grandFather?.tag == "Enemy")
             {
                 // 播放结束效果
                 PlayerEffect(false);
