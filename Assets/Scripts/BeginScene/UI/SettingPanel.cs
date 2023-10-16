@@ -17,27 +17,27 @@ public class SettingPanel : PanelBase<SettingPanel>
     {
         musicToggle.changeValueEvent += (value) =>
         {
-            // ÒôÀÖ¿ª¹Ø
+            // éŸ³ä¹å¼€å…³
             DataManager.Instance.SetMusicOpenOrOff(value);
         };
         effectToggle.changeValueEvent += (value) =>
         {
-            // ÒôĞ§¿ª¹Ø
+            // éŸ³æ•ˆå¼€å…³
             DataManager.Instance.SetEffectOpenOrOff(value);
         };
         musicSlider.changeValueEvent += (value) =>
         {
-            // ÒôÀÖÉùÒô´óĞ¡¸Ä±ä
+            // éŸ³ä¹å£°éŸ³å¤§å°æ”¹å˜
             DataManager.Instance.SetMusicValue(value);
         };
         effectSlider.changeValueEvent += (value) =>
         {
-            // ÒôĞ§ÉùÒô´óĞ¡¸Ä±ä
+            // éŸ³æ•ˆå£°éŸ³å¤§å°æ”¹å˜
             DataManager.Instance.SetEffectValue(value);
         };
         closeBtn.clickEvent += () =>
         {
-            // ¹Ø±ÕÉèÖÃÃæ°å
+            // å…³é—­è®¾ç½®é¢æ¿
             if (SceneManager.GetActiveScene().name == "BeginScene")
             {
                 BeginPanel.Instance.ShowMe();
@@ -63,7 +63,7 @@ public class SettingPanel : PanelBase<SettingPanel>
     {
         musicToggle.isSelect = DataManager.Instance.musicData.musicIsOpen;
         musicSlider.nowValue = DataManager.Instance.musicData.musicValue;
-        effectToggle.isSelect = DataManager.Instance.musicData.effectIsOpen;
-        effectSlider.nowValue = DataManager.Instance.musicData.effectValue;
+        effectToggle.isSelect = DataManager.Instance.musicData.soundIsOpen;
+        effectSlider.nowValue = DataManager.Instance.musicData.soundValue;
     }
 }

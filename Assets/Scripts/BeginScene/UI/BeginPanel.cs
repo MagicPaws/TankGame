@@ -15,23 +15,23 @@ public class BeginPanel : PanelBase<BeginPanel>
         Cursor.lockState = CursorLockMode.Confined;
         startBtn.clickEvent += () =>
         {
-            // ¿ªÊ¼°´Å¥
+            // å¼€å§‹æŒ‰é’®
             SceneManager.LoadScene("GameScene");
         };
         settingBtn.clickEvent += () =>
         {
-            // ÉèÖÃ°´Å¥
+            // è®¾ç½®æŒ‰é’®
             SettingPanel.Instance.ShowMe();
             HideMe();
         };
         quitBtn.clickEvent += () =>
         {
-            // ÍË³ö°´Å¥
+            // é€€å‡ºæŒ‰é’®
             Application.Quit();
         };
         levelBtn.clickEvent += () =>
         {
-            // ÅÅÐÐ°ñ°´Å¥
+            // æŽ’è¡Œæ¦œæŒ‰é’®
             LevelPanel.Instance.ShowMe();
             HideMe();
         };

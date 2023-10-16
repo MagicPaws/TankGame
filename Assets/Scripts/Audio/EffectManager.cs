@@ -13,7 +13,7 @@ public class EffectManager
 
     public void SetEffect(AudioSource effect)
     {
-        effect.mute = !DataManager.Instance.musicData.effectIsOpen;
-        effect.volume = DataManager.Instance.musicData.effectValue;
+        effect.mute = !DataManager.Instance.musicData.soundIsOpen;
+        effect.volume = DataManager.Instance.musicData.soundValue;
     }
 }

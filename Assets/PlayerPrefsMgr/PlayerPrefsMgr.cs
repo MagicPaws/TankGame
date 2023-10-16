@@ -8,17 +8,19 @@ public class PlayerPrefsDataMgr
 {
     private static PlayerPrefsDataMgr instance = new PlayerPrefsDataMgr();
     public static PlayerPrefsDataMgr Instance => instance;
+
     private PlayerPrefsDataMgr()
     {
-
+        // ç§æœ‰æ„é€ å‡½æ•°ç”¨äºå®ç°å•ä¾‹æ¨¡å¼ã€‚
     }
 
     /// <summary>
-    /// Ê¹ÓÃPlayerPrefs±£´æÊı¾İ
-    /// ×¢Òâ£º±£´æµÄ¶ÔÏóµÄÀà±ØĞë°üº¬Ò»¸öÎŞ²Î¹¹Ôìº¯Êı£¬ÇÒÈç¹û¸ÃÀàÖĞ°üº¬×Ô¶¨ÒåÀà³ÉÔ±¶ÔÏóÔò×Ô¶¨ÒåÀàÒ²ĞèÒªº¬ÓĞÎŞ²Î¹¹Ôìº¯ÊıÒÔ´ËÀàÍÆ£¬ÒòÎªÔÚ¼ÓÔØ¸Ã¶ÔÏóÊ±ĞèÒªÊ¹ÓÃ
+    /// ä¿å­˜æ•°æ®åˆ°PlayerPrefsã€‚
+    /// æ³¨æ„ï¼šè¦ä¿å­˜çš„å¯¹è±¡çš„ç±»å¿…é¡»åŒ…å«ä¸€ä¸ªæ— å‚æ•°æ„é€ å‡½æ•°ï¼Œå¦‚æœç±»ä¸­åŒ…å«è‡ªå®šä¹‰ç±»æˆå‘˜å¯¹è±¡ï¼Œè¿™äº›è‡ªå®šä¹‰ç±»ä¹Ÿéœ€è¦å…·æœ‰æ— å‚æ•°æ„é€ å‡½æ•°ï¼Œä»¥æ­¤ç±»æ¨ã€‚
+    /// å› ä¸ºåœ¨åŠ è½½è¯¥å¯¹è±¡æ—¶éœ€è¦ä½¿ç”¨æ— å‚æ•°æ„é€ å‡½æ•°ã€‚
     /// </summary>
-    /// <param name="keyName">¹Ø¼ü×ÖÃû</param>
-    /// <param name="obj">ËùĞè´æ´¢µÄ¶ÔÏó</param>
+    /// <param name="keyName">æ•°æ®çš„å…³é”®å­—</param>
+    /// <param name="obj">è¦å­˜å‚¨çš„å¯¹è±¡</param>
     public void SaveData(string keyName, object obj)
     {
         Type type = obj.GetType();
@@ -26,11 +28,19 @@ public class PlayerPrefsDataMgr
         string key;
         for (int i = 0; i < fieldInfos.Length; i++)
         {
+            // ç”Ÿæˆç”¨äºå­˜å‚¨å­—æ®µå€¼çš„å”¯ä¸€é”®ã€‚
             key = keyName + "_" + type.Name + "_" + fieldInfos[i].FieldType.Name + "_" + fieldInfos[i].Name;
             SaveDataValue(key, fieldInfos[i].GetValue(obj));
         }
         PlayerPrefs.Save();
     }
+
+    /// <summary>
+    /// æ ¹æ®æ•°æ®ç±»å‹å­˜å‚¨æ•°æ®ã€‚
+    /// æ”¯æŒçš„æ•°æ®ç±»å‹åŒ…æ‹¬ï¼šintã€floatã€stringã€boolã€Listã€Dictionaryã€è‡ªå®šä¹‰ç±»ã€‚
+    /// </summary>
+    /// <param name="key">æ•°æ®çš„é”®</param>
+    /// <param name="value">è¦å­˜å‚¨çš„æ•°æ®</param>
     private void SaveDataValue(string key, object value)
     {
         Type type = value.GetType();
@@ -48,7 +58,7 @@ public class PlayerPrefsDataMgr
         }
         else if (type == typeof(bool))
         {
-            // Èç¹ûÊÇTrueÔòÊ¹ÓÃintÀàĞÍ1´æ´¢ Èç¹ûÊÇFalseÔòÊ¹ÓÃintÀàĞÍ0´æ´¢
+            // å¦‚æœæ˜¯Trueåˆ™ä½¿ç”¨intç±»å‹1å­˜å‚¨ï¼Œå¦‚æœæ˜¯Falseåˆ™ä½¿ç”¨intç±»å‹0å­˜å‚¨ã€‚
             PlayerPrefs.SetInt(EncryptionAndDecryption(key), (bool)value == true ? 1 : 0);
         }
         else if (typeof(IList).IsAssignableFrom(type))
@@ -74,37 +84,33 @@ public class PlayerPrefsDataMgr
         }
         else
         {
+            // å¤„ç†è‡ªå®šä¹‰ç±»çš„é€’å½’å­˜å‚¨ã€‚
             SaveData(key + "|", value);
         }
     }
+
     /// <summary>
-    /// Ê¹ÓÃPlayerPrefs¼ÓÔØÊı¾İ 
-    /// ×¢Òâ£º¼ÓÔØµÄ¶ÔÏóµÄÀà±ØĞë°üº¬Ò»¸öÎŞ²Î¹¹Ôìº¯Êı£¬ÇÒÈç¹û¸ÃÀàÖĞ°üº¬×Ô¶¨ÒåÀà³ÉÔ±¶ÔÏóÔò×Ô¶¨ÒåÀàÒ²ĞèÒªº¬ÓĞÎŞ²Î¹¹Ôìº¯ÊıÒÔ´ËÀàÍÆ
+    /// ä»PlayerPrefsåŠ è½½æ•°æ®ã€‚
+    /// æ³¨æ„ï¼šåŠ è½½çš„è‡ªå®šä¹‰ç±»æ—¶ï¼Œç±»ä¸­å¿…é¡»åŒ…å«ä¸€ä¸ªå…¬å¼€çš„æ— å‚æ•°æ„é€ å‡½æ•°ã€‚
+    /// è‹¥åŒ…å«æˆå‘˜å˜é‡ç±»ï¼Œ
     /// </summary>
-    /// <param name="keyName">¹Ø¼ü×ÖÃû</param>
-    /// <param name="type">ËùĞè¼ÓÔØµÄÀàÃû</param>
+    /// <param name="keyName">æ•°æ®çš„å…³é”®å­—</param>
+    /// <param name="type">è¦åŠ è½½çš„ç±»ç±»å‹</param>
     public object LoadData(string keyName, Type type)
     {
-        // Èç¹û·µ»Ø¶ÔÏóµÄ»°²»ÖªµÀÔõÃ´Ñ¡Ôñ¹¹Ôìº¯Êı£¬»òÕßÒª¹æ¶¨Õâ¸öÀà±ØĞë°üº¬ÎŞ²Î¹¹Ôìº¯Êı»òÕßÄ³ÖÖ¹¹Ôìº¯Êı
-        // ****Ö±½Ó¹æ¶¨ĞèÒªÔÚÍâÃæ³õÊ¼»¯ºóÔÙ´«Èë,Ö±½Ó¶Ô³õÊ¼»¯Ö®ºóµÄ´«ÈëµÄ¶ÔÏó¸³Öµ µ«ÊÇÕâ¸ö¶ÔÏóµÄÀàËù°üº¬µÄ×Ô¶¨Òå³ÉÔ±Ò²ĞèÒªÓĞÎŞ²Î¹¹Ôìº¯Êı
-        //ConstructorInfo[] constructorInfos = type.GetConstructors();
-        //object obj = Activator.CreateInstance(type);
-
-        //if (constructorInfos.Length == 0)
-        //{
-        //    return null;
-        //}
-
         object obj = Activator.CreateInstance(type);
         FieldInfo[] fieldInfos = type.GetFields();
         string key;
         for (int i = 0; i < fieldInfos.Length; i++)
         {
+            // ç”Ÿæˆç”¨äºå­˜å‚¨å­—æ®µå€¼çš„å”¯ä¸€é”®ã€‚
             key = keyName + "_" + type.Name + "_" + fieldInfos[i].FieldType.Name + "_" + fieldInfos[i].Name;
+            // ä½¿ç”¨åå°„è®¾ç½®å­—æ®µçš„å€¼ã€‚
             fieldInfos[i].SetValue(obj, LoadDataValue(key, fieldInfos[i].FieldType));
         }
         return obj;
     }
+
     private object LoadDataValue(string key, Type type)
     {
         if (type == typeof(int))
@@ -146,15 +152,16 @@ public class PlayerPrefsDataMgr
         }
         else
         {
+            // å¤„ç†è‡ªå®šä¹‰ç±»çš„é€’å½’åŠ è½½ã€‚
             return LoadData(key + "|", type);
         }
     }
+
     /// <summary>
-    /// Key¼ÓÃÜ
+    /// ç”¨äºå¯¹æ•°æ®é”®è¿›è¡ŒåŠ å¯†å’Œè§£å¯†çš„æ–¹æ³•ã€‚
     /// </summary>
-    /// <param name="data"></param>
-    /// <returns></returns>
-    //[Obsolete("¼ÓÃÜ²»ÄÜÕı³£Ê¹ÓÃ",true)]
+    /// <param name="data">éœ€è¦åŠ å¯†çš„æ•°æ®</param>
+    /// <returns>ä¼ å…¥å¯†é’¥è¿”å›åŸå§‹å€¼ï¼Œä¼ å…¥åŸå§‹å€¼è¿”å›å¯†é’¥</returns>
     private string EncryptionAndDecryption(string data)
     {
         string EncryptionKey = "A";

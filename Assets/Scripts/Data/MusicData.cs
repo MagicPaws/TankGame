@@ -4,9 +4,14 @@ using UnityEngine;
 
 public class MusicData
 {
+    // 判断音乐是否开启
     public bool musicIsOpen;
-    public bool effectIsOpen;
+    // 判断音效是否开启
+    public bool soundIsOpen;
+    // 音乐音量
     public float musicValue;
-    public float effectValue;
+    // 音效音量
+    public float soundValue;
+    // 是否不是第一次
     public bool notFirst;
 }
