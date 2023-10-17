@@ -11,6 +11,9 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/GameScene.unity
     guid: cda8780a452709c4bbae96036598f974
+  - enabled: 1
+    path: Assets/Scenes/EndlessScene.unity
+    guid: 6d009d704662f544f93aa6182bce81f9
   - enabled: 0
     path: Assets/Scenes/New Scene.unity
     guid: 556656da0bbec2846adf668a227940d1

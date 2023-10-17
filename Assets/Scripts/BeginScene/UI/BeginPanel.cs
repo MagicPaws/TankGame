@@ -16,7 +16,8 @@ public class BeginPanel : PanelBase<BeginPanel>
         startBtn.clickEvent += () =>
         {
             // 开始按钮
-            SceneManager.LoadScene("GameScene");
+            ModeSelectPanel.Instance.ShowMe();
+            this.HideMe();
         };
         settingBtn.clickEvent += () =>
         {
